@@ -1,13 +1,10 @@
-Trendy-website
-# Trendy-website
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trending app</title>
-  <h2>TRENDY</h2> //This was for the title of the app. The h2 format enlarged the lines to a bigger font sie.
+  <title>Weather App</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
@@ -15,9 +12,9 @@ Trendy-website
 </head>
 
 <body>
-  <div class="card"> // This class was used to store the card information. The card is the box on the title page where you can see the search bar and other things written down
-    <div class="search"> // This class was for the search bar, search box and other things behind it.
-      <input type="text" class="search-bar" placeholder="Search"> // This text or input format is to display search written on the search bar.
+  <div class="card">
+    <div class="search">
+      <input type="text" class="search-bar" placeholder="Search">
       <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
           width="1.5em" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -26,16 +23,14 @@ Trendy-website
         </svg></button>
     </div>
     <div class="weather loading">
-      <h1 class="World">SEARCH UP TRENDING TOPICS </h1>
+      <h2 class="city">Weather in Denver</h2>
+      <h1 class="temp">51°C</h1>
       <div class="flex">
         <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+        <div class="description">Cloudy</div>
       </div>
-      // The different classes below store information for these different strings which are Sports, Anime, Music etc
-      <div class="Sports">SPORTS:</div>
-      <div class="wind">ANIME:</div>
-      <div class="wind">WORLD NEWS:</div>
-      <div class="wind">MUSIC:</div>
-      <div class="movies">MOVIES:</div>
+      <div class="humidity">Humidity: 60%</div>
+      <div class="wind">Wind speed: 6.2 km/h</div>
     </div>
   </div>
 </body>
