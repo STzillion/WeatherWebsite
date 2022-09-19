@@ -1,0 +1,18 @@
+Console.WriteLine("Enter number to multiply");
+        string firstInput = Console.ReadLine();
+        int convertInput = Convert.ToInt32(firstInput);
+        int a = convertInput;
+        
+        Console.WriteLine("Enter second number to multiply");
+        string secondInput = Console.ReadLine();
+        int convertSecondInput = Convert.ToInt32(secondInput);
+        int b = convertSecondInput;
+        
+        int c = (a*b);
+        string b2 = ("bbb");
+         int d = (b2.Length);
+         Console.WriteLine(a + "x" + b + " = " + c);
+         
+        Console.WriteLine("Therefore " + a + "x" + b + " = " + a +"(" + b + ")times");
+        Console.WriteLine("Or");
+        Console.WriteLine(a + "x" + b + " = " + b +"(" + a + ")times");
