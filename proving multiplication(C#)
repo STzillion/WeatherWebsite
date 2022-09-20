@@ -50,3 +50,45 @@ Console.WriteLine("Enter number to multiply");
         int num = (0);
         return int.TryParse(input, out num);
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+     Console.WriteLine("Enter number to multiply");
+        string firstInputOne = Console.ReadLine();
+        int convertInput = Convert.ToInt32(firstInputOne);
+        int a = convertInput;
+        
+        int product = (0);
+        int count = (0);
+       
+           
+           
+        
+        Console.WriteLine("Please Enter Second number");
+        
+        string secondInputTwo = Console.ReadLine();
+        int convertSecondInput = Convert.ToInt32(secondInputTwo);
+        int b = convertSecondInput;
+          
+        
+        for(count=0; count<b; count++)
+        {
+            product = product + a;
+        }
+        Console.WriteLine(product);
+        for(count = 0; count<b; count++)
+        {
+            Console.WriteLine(a + "x");
+        }
+    
