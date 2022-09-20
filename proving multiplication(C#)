@@ -56,15 +56,7 @@ Console.WriteLine("Enter number to multiply");
     
     
     
-    
-    
-    
-    
- 
-    
-    
-    
-     Console.WriteLine("Enter number to multiply");
+    Console.WriteLine("Enter number to multiply");
         string firstInputOne = Console.ReadLine();
         int convertInput = Convert.ToInt32(firstInputOne);
         int a = convertInput;
@@ -72,23 +64,29 @@ Console.WriteLine("Enter number to multiply");
         int product = (0);
         int count = (0);
        
-           
-           
-        
         Console.WriteLine("Please Enter Second number");
         
         string secondInputTwo = Console.ReadLine();
         int convertSecondInput = Convert.ToInt32(secondInputTwo);
         int b = convertSecondInput;
           
-        
+          
         for(count=0; count<b; count++)
         {
             product = product + a;
         }
-        Console.WriteLine(product);
+        
+        Console.WriteLine(a + "x" + b + "=" + product );
+        Console.WriteLine(" ");
+        Console.WriteLine("Therefore " + a + "x" + b + "= adding:");
+        
         for(count = 0; count<b; count++)
         {
-            Console.WriteLine(a + "x");
+            Console.WriteLine("(" + a + ")");
         }
+        Console.WriteLine("(" + b + ")times");
+    
+       
+           
+           
     
