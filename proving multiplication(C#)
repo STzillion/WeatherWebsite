@@ -16,3 +16,9 @@ Console.WriteLine("Enter number to multiply");
         Console.WriteLine("Therefore " + a + "x" + b + " = " + a +"(" + b + ")times");
         Console.WriteLine("Or");
         Console.WriteLine(a + "x" + b + " = " + b +"(" + a + ")times");
+        
+        public static bool CheckInt(string input)
+    {
+        int num = (0);
+        return int.TryParse(input, out num);
+    }
