@@ -1,13 +1,35 @@
 Console.WriteLine("Enter number to multiply");
         string firstInput = Console.ReadLine();
-        int convertInput = Convert.ToInt32(firstInput);
-        int a = convertInput;
+           if(CheckInt(firstInput) == false)
+           {
+               Console.WriteLine("This is not a number, please enter a number");
+               
+                string firstInputOne = Console.ReadLine();
+                int convertInput = Convert.ToInt32(firstInputOne);
+                int a = convertInput;
+           }
+          
+           else
+           {
+               Console.WriteLine("Thank you!");
+           }
+           
+           
         
-        Console.WriteLine("Enter second number to multiply");
+        Console.WriteLine("Please Enter Second number");
         string secondInput = Console.ReadLine();
-        int convertSecondInput = Convert.ToInt32(secondInput);
-        int b = convertSecondInput;
-        
+          if(CheckInt(secondInput) == false)
+          {
+              Console.WriteLine("This is not a number, please enter a number");
+               string secondInputTwo = Console.ReadLine();
+               int convertSecondInput = Convert.ToInt32(secondInputTwo);
+               int b = convertSecondInput;
+          }
+          else
+          {
+              Console.WriteLine("Thank you");
+          }
+          
         int c = (a*b);
         string b2 = ("bbb");
          int d = (b2.Length);
@@ -17,7 +39,13 @@ Console.WriteLine("Enter number to multiply");
         Console.WriteLine("Or");
         Console.WriteLine(a + "x" + b + " = " + b +"(" + a + ")times");
         
-        public static bool CheckInt(string input)
+       
+        
+        
+
+        
+    }
+     public static bool CheckInt(string input)
     {
         int num = (0);
         return int.TryParse(input, out num);
