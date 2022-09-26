@@ -84,7 +84,14 @@ Console.WriteLine("Enter number to multiply");
         {
             Console.WriteLine("(" + a + ")");
         }
-        Console.WriteLine("(" + b + ")times");
+        Console.WriteLine(  b + " times");
+        Console.WriteLine("OR adding");
+        
+         for(count = 0; count<a; count++)
+        {
+            Console.WriteLine("(" + b + ")");
+        }
+        Console.WriteLine( a + " times");
     
        
            
