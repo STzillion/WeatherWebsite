@@ -1,8 +1,0 @@
-const summaryDiv = document.getElementById("order-summary");
-			summaryDiv.innerHTML = `
-				<h2>Order Summary</h2>
-				<p>You have ordered ${quantity} ${getTrackerName(tracker)} tracker(s).</p>
-				<p>Tax: $${tax.toFixed(2)}</p>
-				<p>Shipping: $${shippingCost.toFixed(2)}</p>
-				<p>Total: $${total.toFixed(2)}</p>
-			`;
